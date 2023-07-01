@@ -5,7 +5,7 @@ import Study1.service.BeanFactoryService;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 
-public class test {
+public class beanFactoryTest {
     public static void main(String[] args) {
         DefaultListableBeanFactory defaultListableBeanFactory = new DefaultListableBeanFactory();
         XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(defaultListableBeanFactory);
@@ -13,6 +13,6 @@ public class test {
         BeanFactoryService beanFactoryService = (BeanFactoryService) defaultListableBeanFactory.getBean("beanFactoryService");
 //        System.out.println(beanFactoryService);
         BeanFactoryDao beanFactoryDao = (BeanFactoryDao) defaultListableBeanFactory.getBean("beanFactoryDao");
-        System.out.println(beanFactoryDao);
+//        System.out.println(beanFactoryDao);
     }
 }

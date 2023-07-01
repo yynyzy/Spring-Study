@@ -4,7 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="beanFactoryService" class="Study1.service.BeanFactoryService">
+    <bean id="beanFactoryService"
+          name="aaa"
+          class="Study1.service.BeanFactoryService"
+          scope="singleton"
+          init-method="init"
+          destroy-method="destroy"
+    >
         <property name="beanFactoryDao" ref="beanFactoryDao">
         </property>
     </bean>
