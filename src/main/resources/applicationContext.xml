@@ -11,6 +11,7 @@
           init-method="init"
           destroy-method="destroy"
     >
+<constructor-arg name="name" value="yyn"></constructor-arg>
         <property name="beanFactoryDao" ref="beanFactoryDao">
         </property>
     </bean>

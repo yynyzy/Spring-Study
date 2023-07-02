@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="37e7e92e-611b-46f4-95d1-26e383da1c6f" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Study1/service/BeanFactoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Study1/service/BeanFactoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Study1/test/applictaionContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Study1/test/applictaionContextTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Study1/test/beanFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Study1/test/beanFactoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
