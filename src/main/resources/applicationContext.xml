@@ -20,16 +20,16 @@
 <!--    </bean>-->
 
 <!-- 静态工厂方式创建 bean -->
-    <bean id="beanFactory1" class="Study1/beanFactory/StaticBeanFactory" factory-method="setStaticBeanFactory">
+    <bean id="beanFactory1" class="Study1.factory.StaticBeanFactory1" factory-method="setStaticBeanFactory">
     </bean>
 
     <!-- 实例工厂方式创建 bean -->
-    <bean id="beanFactory2" class="Study1/beanFactory/BeanFactory">
+    <bean id="beanFactory2" class="Study1.factory.BeanFactory2">
     </bean>
-    <bean id="beanFactoryDao2" class="Study1/Dao/BeanFactoryDao" factory-bean="beanFactory2" factory-method="setBeanFactory">
+    <bean id="beanFactoryDao2" factory-bean="beanFactory2" factory-method="setBeanFactoryDao">
     </bean>
 
     <!-- FactoryBean 方式规范化创建 bean -->
-    <bean id="beanFactory3" class="Study1/beanFactory/FactoryBean3.java">
+    <bean id="beanFactory3" class="Study1.factory.FactoryBean3">
     </bean>
 </beans>

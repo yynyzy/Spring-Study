@@ -1,4 +1,4 @@
-package Study1.beanFactory;
+package Study1.factory;
 
 import Study1.Dao.BeanFactoryDao;
 import org.springframework.beans.factory.FactoryBean;
