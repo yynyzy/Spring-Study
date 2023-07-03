@@ -7,6 +7,8 @@
     <list default="true" id="37e7e92e-611b-46f4-95d1-26e383da1c6f" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Study1/service/BeanFactoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Study1/service/BeanFactoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Study1/test/applictaionContextTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Study1/test/applictaionContextTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +118,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Spring_Study$Study1_test_applictaionContextTest.ic" NAME="Study1.test.applictaionContextTest 覆盖结果" MODIFIED="1688391803753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Study1.test.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/Spring_Study$beanFactoryTest.ic" NAME="beanFactoryTest 覆盖结果" MODIFIED="1688131329799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Study1.test.*</FILTER>
     </SUITE>

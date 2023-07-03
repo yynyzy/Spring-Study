@@ -11,7 +11,7 @@ public class BeanFactoryService implements InitializingBean {
 //    }
 
 // 构造方式实例化 Bean 分为有参构造和无参构造方法实例化，有参构造实例化 Bean 时，需要注入参数，通过 <constructor-arg> 标签注入。
-        public BeanFactoryService(String name) {
+    public BeanFactoryService(String name) {
         System.out.println("有参构造器");
     }
     public void init() {

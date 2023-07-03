@@ -4,18 +4,32 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
                         http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="beanFactoryService"
-          name="aaa"
-          class="Study1.service.BeanFactoryService"
-          scope="singleton"
-          init-method="init"
-          destroy-method="destroy"
-    >
-<constructor-arg name="name" value="yyn"></constructor-arg>
-        <property name="beanFactoryDao" ref="beanFactoryDao">
-        </property>
-    </bean>
-    <bean id="beanFactoryDao" class="Study1.Dao.BeanFactoryDao">
+<!--    <bean id="beanFactoryService"-->
+<!--          name="aaa"-->
+<!--          class="Study1.service.BeanFactoryService"-->
+<!--          scope="singleton"-->
+<!--          init-method="init"-->
+<!--          destroy-method="destroy"-->
+<!--    >-->
+<!--        <constructor-arg name="name" value="yyn">-->
+<!--        </constructor-arg>-->
+<!--        <property name="beanFactoryDao" ref="beanFactoryDao">-->
+<!--        </property>-->
+<!--    </bean>-->
+<!--    <bean id="beanFactoryDao" class="Study1.Dao.BeanFactoryDao">-->
+<!--    </bean>-->
 
+<!-- 静态工厂方式创建 bean -->
+    <bean id="beanFactory1" class="Study1/beanFactory/StaticBeanFactory" factory-method="setStaticBeanFactory">
+    </bean>
+
+    <!-- 实例工厂方式创建 bean -->
+    <bean id="beanFactory2" class="Study1/beanFactory/BeanFactory">
+    </bean>
+    <bean id="beanFactoryDao2" class="Study1/Dao/BeanFactoryDao" factory-bean="beanFactory2" factory-method="setBeanFactory">
+    </bean>
+
+    <!-- FactoryBean 方式规范化创建 bean -->
+    <bean id="beanFactory3" class="Study1/beanFactory/FactoryBean3.java">
     </bean>
 </beans>
