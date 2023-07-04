@@ -32,4 +32,30 @@
     <!-- FactoryBean 方式规范化创建 bean -->
     <bean id="beanFactory3" class="Study1.factory.FactoryBean3">
     </bean>
+
+    <bean id="beanFactoryService2" class="Study1.service.BeanFactoryService2">
+        <property name="beanFactoryDaoList">
+            <list>
+                <bean class="Study1.Dao.BeanFactoryDao">
+                </bean>
+                <bean class="Study1.Dao.BeanFactoryDao">
+                </bean>
+                <bean class="Study1.Dao.BeanFactoryDao">
+                </bean>
+            </list>
+        </property>
+        <property name="beanFactoryDaoList2">
+            <list>
+                <value>123</value>
+                <value>yzy</value>
+            </list>
+        </property>
+        <property name="name" value="yyn">
+        </property>
+        <property name="bean4" >
+            <bean id="beanFactoryDao4" class="Study1.Dao.BeanFactoryDao">
+            </bean>
+        </property>
+    </bean>
+
 </beans>

@@ -31,4 +31,5 @@ public class BeanFactoryService implements InitializingBean {
         // 先于 init-method 配置的方法调用
         System.out.println("InitializingBean 调用");
     }
+
 }

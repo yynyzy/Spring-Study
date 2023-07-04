@@ -1,6 +1,7 @@
 package Study1.test;
 
 import Study1.Dao.BeanFactoryDao;
+import Study1.service.BeanFactoryService2;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -16,15 +17,19 @@ public class applictaionContextTest {
 //        applicationContext.close();
 
 // 静态工厂方式创建 bean
-        BeanFactoryDao beanFactoryDao1= (BeanFactoryDao) applicationContext.getBean("beanFactory1");
-        System.out.println(beanFactoryDao1);
+//        BeanFactoryDao beanFactoryDao1= (BeanFactoryDao) applicationContext.getBean("beanFactory1");
+//        System.out.println(beanFactoryDao1);
 
 // 实例工厂方式创建 bean
-        BeanFactoryDao beanFactoryDao2= (BeanFactoryDao) applicationContext.getBean("beanFactoryDao2");
-        System.out.println(beanFactoryDao2);
+//        BeanFactoryDao beanFactoryDao2= (BeanFactoryDao) applicationContext.getBean("beanFactoryDao2");
+//        System.out.println(beanFactoryDao2);
 
         // FactoryBean 方式规范化创建 bean
-        Object beanFactory3= applicationContext.getBean("beanFactory3");
-        System.out.println(beanFactory3);
+//        Object beanFactory3= applicationContext.getBean("beanFactory3");
+//        System.out.println(beanFactory3);
+
+        BeanFactoryService2 beanFactoryService2= (BeanFactoryService2)applicationContext.getBean("beanFactoryService2");
+        beanFactoryService2.onShow();
+//        System.out.println(beanFactoryService2);
     }
 }
