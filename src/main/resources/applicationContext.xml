@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-                        http://www.springframework.org/schema/beans/spring-beans.xsd">
+                        http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context
+                        http://www.springframework.org/schema/context/spring-context.xsd
+">
 
+<!--    自定义标签，引入命名空间-->
+    <context:property-placeholder></context:property-placeholder>
 <!--    <bean id="beanFactoryService"-->
 <!--          name="aaa"-->
 <!--          class="Study1.service.BeanFactoryService"-->
@@ -55,6 +61,18 @@
         <property name="bean4" >
             <bean id="beanFactoryDao4" class="Study1.Dao.BeanFactoryDao">
             </bean>
+        </property>
+        <property name="beanSet">
+            <set>
+                <value>abc</value>
+                <value>def</value>
+            </set>
+        </property>
+        <property name="beanMap">
+            <map>
+                <entry key="name" value="yyn"></entry>
+                <entry key="age" value="18"></entry>
+            </map>
         </property>
     </bean>
 
