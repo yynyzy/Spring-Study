@@ -7,9 +7,11 @@
                         http://www.springframework.org/schema/context
                         http://www.springframework.org/schema/context/spring-context.xsd
 ">
-
 <!--    自定义标签，引入命名空间-->
     <context:property-placeholder></context:property-placeholder>
+
+
+    <import resource="applicationContext-import.xml"></import>
 <!--    <bean id="beanFactoryService"-->
 <!--          name="aaa"-->
 <!--          class="Study1.service.BeanFactoryService"-->
@@ -75,5 +77,15 @@
             </map>
         </property>
     </bean>
+
+<!--  profile 命名空间-->
+    <beans profile="dev">
+        <bean id="profileDevBean" class="Study1.Dao.BeanFactoryDao">
+        </bean>
+    </beans>
+    <beans profile="test">
+        <bean id="profileTestBean" class="Study1.Dao.BeanFactoryDao">
+        </bean>
+    </beans>
 
 </beans>
