@@ -45,7 +45,10 @@ public class applictaionContextTest {
 
 
         // import 标签引入其他 xml bean 配置
-        BeanFactoryDao importTestBean= (BeanFactoryDao)applicationContext.getBean("import-test");
-        System.out.println(importTestBean);
+//        BeanFactoryDao importTestBean= (BeanFactoryDao)applicationContext.getBean("import-test");
+
+        // 别名
+        BeanFactoryDao aaa= (BeanFactoryDao)applicationContext.getBean("aaa");
+        System.out.println(aaa);
     }
 }

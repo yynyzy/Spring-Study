@@ -40,7 +40,6 @@
     <!-- FactoryBean 方式规范化创建 bean -->
     <bean id="beanFactory3" class="Study1.factory.FactoryBean3">
     </bean>
-
     <bean id="beanFactoryService2" class="Study1.service.BeanFactoryService2">
         <property name="beanFactoryDaoList">
             <list>
@@ -78,14 +77,20 @@
         </property>
     </bean>
 
+
 <!--  profile 命名空间-->
-    <beans profile="dev">
-        <bean id="profileDevBean" class="Study1.Dao.BeanFactoryDao">
-        </bean>
-    </beans>
-    <beans profile="test">
-        <bean id="profileTestBean" class="Study1.Dao.BeanFactoryDao">
-        </bean>
-    </beans>
+<!--    <beans profile="dev">-->
+<!--        <bean id="profileDevBean" class="Study1.Dao.BeanFactoryDao">-->
+<!--        </bean>-->
+<!--    </beans>-->
+<!--    <beans profile="test">-->
+<!--        <bean id="profileTestBean" class="Study1.Dao.BeanFactoryDao">-->
+<!--        </bean>-->
+<!--    </beans>-->
+
+
+    <!--        别名-->
+    <bean id="beanDaoAlias" class="Study1.Dao.BeanFactoryDao"></bean>
+    <alias name="beanDaoAlias" alias="aaa"/>
 
 </beans>
