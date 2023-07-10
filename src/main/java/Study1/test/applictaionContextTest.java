@@ -48,7 +48,20 @@ public class applictaionContextTest {
 //        BeanFactoryDao importTestBean= (BeanFactoryDao)applicationContext.getBean("import-test");
 
         // 别名
-        BeanFactoryDao aaa= (BeanFactoryDao)applicationContext.getBean("aaa");
-        System.out.println(aaa);
+//        BeanFactoryDao aaa= (BeanFactoryDao)applicationContext.getBean("aaa");
+//        System.out.println(aaa);
+
+//      三种 getbean 的方式
+        // 根据 beanName 获取容器中的 bean 实例，需要手动强转
+        BeanFactoryDao fun1 = (BeanFactoryDao)applicationContext.getBean("beanDaoAlias");
+        System.out.println(fun1);
+
+        // 根据 bean 类型去容器中匹配对应的 bean 实例，如果存在多个匹配 bean 则报错
+//        BeanFactoryDao fun2 = applicationContext.getBean(BeanFactoryDao.class);
+//        System.out.println(fun2);
+
+        // 根据 beanName 获取容器中的 bean 实例，指定bean的type类型
+        BeanFactoryDao fun3 = applicationContext.getBean("beanDaoAlias", BeanFactoryDao.class);
+        System.out.println(fun3);
     }
 }
